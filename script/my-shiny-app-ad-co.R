@@ -8,6 +8,12 @@ library(dplyr)
 library(DT)
 #the shiny app with the preprocessed data , the app needs a minute to start, the fastest cluster is 4 , you can click on the info box and go direct to the gencard site for the gene
 
+
+
+
+#####HUBGENES reparieren
+
+
 set_entrez_key("275b491fc56280b6c69e8b23b1073a142108")
 key1<-"275b491fc56280b6c69e8b23b1073a142108"
 #########
@@ -242,26 +248,14 @@ add_shape("triangle", clip=shapes("circle")$clip,
 
 
 ###degree
-aFunction<- function(dataTabel){
-  ###returns table with unique names and dregree ordered
-  y<-c(dataTabel[,1],dataTabel[,2])
-  selectThis <-unique(y)
-  degree<-0
-  yx<-data.frame(genes=selectThis,degree)
-  i=1
-  while(i <= length(selectThis)){
-    yx$degree[i]=sum(y==selectThis[i])
-    i=i+1
-  }
-  yxz<-yx[order(yx$degree,decreasing=TRUE),]
-  yxz$description<-""
-  
-  return(yxz)
-}
-xyz<-aFunction(tabble)
-xyz1<-aFunction(cluster1)
-xyz2<-aFunction(cluster2)
-xyz3<-aFunction(cluster3)
+
+#xyz<-aFunction(tabble)
+#xyz1<-aFunction(cluster1)
+#xyz2<-aFunction(cluster2)
+#xyz3<-aFunction(cluster3)
+
+
+
 
 ## betweenes
 
@@ -295,29 +289,32 @@ betweenFunction<-function(graph){
 
 ###data refining
 
-completetable1<-data.frame(genes=vertex.attributes(gc1)$name,degree=xyz1$degree,names=vertex.attributes(gc1)$hgncsymbol,genebiotype=vertex.attributes(gc1)$genebiotype,description="")
+completetable1<-data.frame(genes=vertex.attributes(gc1)$name,degree=degree(gc1),names=vertex.attributes(gc1)$hgncsymbol,genebiotype=vertex.attributes(gc1)$genebiotype,description="")
 completetable1<-completetable1[order(completetable1$genes), ]
 completetable1$description<-cluster1info$description
 completetable1<-completetable1[order(completetable1$degree), ]
 network1<-betweenFunction(gc1)
 
-completetable2<-data.frame(genes=vertex.attributes(gc2)$name,degree=xyz2$degree,names=vertex.attributes(gc2)$hgncsymbol,genebiotype=vertex.attributes(gc2)$genebiotype,description="")
+completetable2<-data.frame(genes=vertex.attributes(gc2)$name,degree=degree(gc2),names=vertex.attributes(gc2)$hgncsymbol,genebiotype=vertex.attributes(gc2)$genebiotype,description="")
 completetable2<-completetable2[order(completetable2$genes), ]
 completetable2$description<-cluster2info$description
 completetable2<-completetable2[order(completetable2$degree), ]
 network2<-betweenFunction(gc2)
 
-completetable3<-data.frame(genes=vertex.attributes(gc3)$name,degree=xyz3$degree,names=vertex.attributes(gc3)$hgncsymbol,genebiotype=vertex.attributes(gc3)$genebiotype,description="")
+completetable3<-data.frame(genes=vertex.attributes(gc3)$name,degree=degree(gc3),names=vertex.attributes(gc3)$hgncsymbol,genebiotype=vertex.attributes(gc3)$genebiotype,description="")
 completetable3<-completetable3[order(completetable3$genes), ]
 completetable3$description<-cluster3info$description
 completetable3<-completetable3[order(completetable3$degree), ]
 network3<-betweenFunction(gc3)
 
-completetable4<-data.frame(genes=vertex.attributes(g  )$name,degree= xyz$degree,names=vertex.attributes(g  )$hgncsymbol,genebiotype=vertex.attributes(g  )$genebiotype,description="")
+
+completetable4<-data.frame(genes=vertex.attributes(g  )$name,degree= degree(g)  ,names=vertex.attributes(g  )$hgncsymbol,genebiotype=vertex.attributes(g  )$genebiotype,description="")
 completetable4<-completetable4[order(completetable4$genes), ]
 completetable4$description<-cluster4info$description
 completetable4<-completetable4[order(completetable4$degree), ]
 network4<-betweenFunction(g)
+
+
 
 
 # Define UI ----
@@ -393,7 +390,8 @@ ui <- fluidPage(
                   tabPanel("AlzheimerGenes",dataTableOutput("alzheimerGenesX")),
                   
                   #
-                  #tabPanel("Test",tableOutput("test")),
+                  #tabPanel("Test",dataTableOutput("test")),
+                  #tabPanel("Test2",dataTableOutput("test2")),
                   #
                   
                   tabPanel("Cluster 1",tabsetPanel(
@@ -431,7 +429,7 @@ options(shiny.maxRequestSize=90*1024^2)
 server <- function(input, output) {
   ##all
   
-  
+  ###
   output$alzheimerGenesX<-renderDataTable({
     for(x in 1:length(alzheimergenes$hgnc_symbol))alzheimergenes$genecard[x]<-createLink(alzheimergenes$hgnc_symbol[x])
     alzheimergenes
@@ -508,6 +506,7 @@ server <- function(input, output) {
   output$hubGeneDesciptions4<-renderDataTable({
     hubtable4<-completetable4[order(completetable4$degree,decreasing = TRUE ),]
     for(x in 1:10)hubtable4$genecard[x]<-createLink(hubtable4$genes[x])
+    hubtable4<-subset(hubtable4,select = -1)
     head(hubtable4,10)
    }, escape = FALSE)
   
@@ -515,18 +514,21 @@ server <- function(input, output) {
   output$hubGeneDesciptions1<-renderDataTable({
     hubtable1<-completetable1[order(completetable1$degree,decreasing = TRUE ),]
     for(x in 1:10) hubtable1$genecard[x]<-createLink(hubtable1$genes[x])
+    hubtable1<-subset(hubtable1,select = -1)
     head(hubtable1,10)
   }, escape = FALSE)
   ##cluster 2
   output$hubGeneDesciptions2<-renderDataTable({
     hubtable2<-completetable2[order(completetable2$degree,decreasing = TRUE ),]
     for(x in 1:10) hubtable2$genecard[x]<-createLink(hubtable2$genes[x])
+    hubtable2<-subset(hubtable2,select = -1)
     head(hubtable2,10)
   }, escape = FALSE)
   ##cluster 3
   output$hubGeneDesciptions3<-renderDataTable({
     hubtable3<-completetable3[order(completetable3$degree,decreasing = TRUE ),]
     for(x in 1:10) hubtable3$genecard[x]<-createLink(hubtable3$genes[x])
+    hubtable3<-subset(hubtable3,select = -1)
     head(hubtable3,10)
   }, escape = FALSE)
   #########hub####
