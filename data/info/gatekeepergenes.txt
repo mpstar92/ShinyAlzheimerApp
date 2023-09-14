@@ -1,0 +1,30 @@
+"hgnc_symbol","gene_biotype","ensembl_gene_id","description","between_score"
+"CLCN6","protein_coding","ENSG00000011021","chloride voltage-gated channel 6 [Source:HGNC Symbol;Acc:HGNC:2024]",63572.4
+"SMC1A","protein_coding","ENSG00000072501","structural maintenance of chromosomes 1A [Source:HGNC Symbol;Acc:HGNC:11111]",63733.98
+"FAM76B","protein_coding","ENSG00000077458","family with sequence similarity 76 member B [Source:HGNC Symbol;Acc:HGNC:28492]",28665.75
+"AMOTL2","protein_coding","ENSG00000114019","angiomotin like 2 [Source:HGNC Symbol;Acc:HGNC:17812]",39157.42
+"AKAP1","protein_coding","ENSG00000121057","A-kinase anchoring protein 1 [Source:HGNC Symbol;Acc:HGNC:367]",61634.62
+"PIGT","protein_coding","ENSG00000124155","phosphatidylinositol glycan anchor biosynthesis class T [Source:HGNC Symbol;Acc:HGNC:14938]",67695.33
+"SLC35B3","protein_coding","ENSG00000124786","solute carrier family 35 member B3 [Source:HGNC Symbol;Acc:HGNC:21601]",38103.83
+"EML2","protein_coding","ENSG00000125746","EMAP like 2 [Source:HGNC Symbol;Acc:HGNC:18035]",26882.95
+"HECTD3","protein_coding","ENSG00000126107","HECT domain E3 ubiquitin protein ligase 3 [Source:HGNC Symbol;Acc:HGNC:26117]",29445.83
+"MYCN","protein_coding","ENSG00000134323","MYCN proto-oncogene, bHLH transcription factor [Source:HGNC Symbol;Acc:HGNC:7559]",46214.83
+"HIRIP3","protein_coding","ENSG00000149929","HIRA interacting protein 3 [Source:HGNC Symbol;Acc:HGNC:4917]",46110.48
+"PANK4","protein_coding","ENSG00000157881","pantothenate kinase 4 (inactive) [Source:HGNC Symbol;Acc:HGNC:19366]",30769.42
+"ZNF3","protein_coding","ENSG00000166526","zinc finger protein 3 [Source:HGNC Symbol;Acc:HGNC:13089]",27021.75
+"RNF214","protein_coding","ENSG00000167257","ring finger protein 214 [Source:HGNC Symbol;Acc:HGNC:25335]",37597.33
+"ABCA3","protein_coding","ENSG00000167972","ATP binding cassette subfamily A member 3 [Source:HGNC Symbol;Acc:HGNC:33]",37026.33
+"MECP2","protein_coding","ENSG00000169057","methyl-CpG binding protein 2 [Source:HGNC Symbol;Acc:HGNC:6990]",49581.32
+"C11orf24","protein_coding","ENSG00000171067","chromosome 11 open reading frame 24 [Source:HGNC Symbol;Acc:HGNC:1174]",40657.75
+"GXYLT2","protein_coding","ENSG00000172986","glucoside xylosyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:33383]",33965.5
+"PTPN11","protein_coding","ENSG00000179295","protein tyrosine phosphatase non-receptor type 11 [Source:HGNC Symbol;Acc:HGNC:9644]",26267.58
+"BACE1","protein_coding","ENSG00000186318","beta-secretase 1 [Source:HGNC Symbol;Acc:HGNC:933]",62603.42
+"MAN2A2","protein_coding","ENSG00000196547","mannosidase alpha class 2A member 2 [Source:HGNC Symbol;Acc:HGNC:6825]",188658.17
+"RNPS1","protein_coding","ENSG00000205937","RNA binding protein with serine rich domain 1 [Source:HGNC Symbol;Acc:HGNC:10080]",26338.42
+"RTL8B","protein_coding","ENSG00000212747","retrotransposon Gag like 8B [Source:HGNC Symbol;Acc:HGNC:33156]",43142.28
+"MSMP","protein_coding","ENSG00000215183","microseminoprotein, prostate associated [Source:HGNC Symbol;Acc:HGNC:29663]",26668.42
+"","lncRNA","ENSG00000249474","novel transcript",41015.67
+"","lncRNA","ENSG00000253200","novel transcript, antisense to KIAA1967",130820.75
+"SNRPA1-DT","lncRNA","ENSG00000259172","SNRPA1 divergent transcript [Source:HGNC Symbol;Acc:HGNC:55431]",32103.42
+"","lncRNA","ENSG00000261505","novel transcript, antisense to UBE2I",79129.95
+"EML2-AS1","lncRNA","ENSG00000267757","EML2 antisense RNA 1 [Source:HGNC Symbol;Acc:HGNC:48331]",86882.83
