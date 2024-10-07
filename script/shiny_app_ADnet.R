@@ -314,14 +314,14 @@ plotxfunc2<-function(gcx,highlight_selectx,range2,range1,checkboxHub,completetab
   # Define a color palette
   group_colors <- c("Mitochondrial energy production" = "#A5C8E4", 
                     "Apoptosis" = "#C0ECCC",
-                    "intracellular trafficking" = "#F4CDA6",
+                    "Intracellular trafficking" = "#F4CDA6",
                     "Synapse signaling" = "#F9F0C1",
                     "Others" = "#F2E7DC",
                     "No enriched GO" = "#D9D9D9",
                     "Cytoskeleton organization" = "#78DAFA",
-                    "gene expression" = "#D0B5EA",
+                    "Gene expression" = "#D0B5EA",
                     "Neurogenesis" = "#F6A8A6",
-                    "cellular homeostasis" = "#F67CFA"
+                    "Cellular homeostasis" = "#F67CFA"
   )
   
   assign_pie_colors <- function(properties, group_colors) {
@@ -439,7 +439,7 @@ plotxfunc2<-function(gcx,highlight_selectx,range2,range1,checkboxHub,completetab
                   "AD-specific links",
                   "Control-specific links",
                   "Common links",
-                  "lncRNA coding Genes","Protein coding Genes"),
+                  "lncRNA","Protein-coding Genes"),
          
          lty=c(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0),
          pch = c(21,   #
