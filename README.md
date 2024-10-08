@@ -13,3 +13,37 @@ Key features of Shiny App ADNet include:
     4. Visualization of the AD Network 
 
     5. Interactive plots of the gene co-expression networks for each cluster, with selectable parameters: AD pathway genes, core genes, first neighbor genes, and strength of wTO correlation.
+
+
+Table of Contents and Additional Tutorials
+_____________________________________________________
+
+1. Installation
+2. Quick Start Guide
+3. Frequently Asked Questions
+
+
+Installation 
+
+RStudio is preferable to use.
+First, users can run the following code to check if the packages required by Shiny App ADNet exist and install them if required:
+
+reqPkg = c("data.table", "Matrix", "igraph", "qgraph", "DT", 
+           "dplyr", "shinydashboard", "biomaRt")
+newPkg = reqPkg[!(reqPkg %in% installed.packages()[,"Package"])]
+if(length(newPkg)){install.packages(newPkg)}
+
+
+
+
+Quick Start Guide
+
+
+Shiny App ADNet can then be installed from GitHub as follows:
+
+Download Zip folder from https://github.com/mpstar92/Shiny_App_ADnet
+Extract the folder and open the project Shiny_app_ADnet.Rproj
+Open file script/shiny_app_ADnet.R
+Start the application by clicking on "Run App" in the top right corner. (App will start in a browser after a ~ 30 seconds)
+
+In the App:
