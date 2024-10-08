@@ -1,4 +1,4 @@
-ADNet User Guide
+**ADNet User Guide**
 
 ADNet is a Shiny app designed to facilitate exploration of the temporal cortex Alzheimer's disease (AD) and control gene co-expression networks. It provides a user-friendly interface to examine detailed network information, offering valuable insights for research and further analysis. For more in-depth information about the research and methodology behind ADNet, please refer to the associated paper: [paper title-link].
 
