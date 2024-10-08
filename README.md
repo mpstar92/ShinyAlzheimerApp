@@ -44,7 +44,7 @@ if(length(newPkg)){install.packages(newPkg)}
 
 - You can switch between the **gene co-expression network**, information about the network, the **AD KEGG pathway**, and the **core genes**.
 
-  ![AD Network Tabs](data/images/tabs_ad.jpg)
+ <img src="data/images/tabs_ad.jpg" alt="AD Network Tabs" width="700"/>
 
 ---
 
@@ -53,15 +53,15 @@ if(length(newPkg)){install.packages(newPkg)}
 - In this tab, you can select a cluster, and for each cluster, there are options to view:
 
   - **Cluster information**, including basic information about the selected gene.  
-    ![Cluster Information](data/images/cluster_information.jpg)
+   <img src="data/images/cluster_information.jpg" alt="Cluster Information" width="700"/>
   
   - **First neighbor, core, and AD KEGG pathway genes**.  
-    ![Core Genes](data/images/core.jpg)
+   <img src="data/images/core.jpg" alt="Core Genes" width="700"/>
 
 - Each table in this section allows you to search for specific genes or terms.
 - The respective network visualization of each cluster is also available under **Network visualization** tab.
 
-  ![Network Plot](data/images/network.jpg)
+  <img src="data/images/network.jpg" alt="Network Plot" width="700"/>
 
 ---
 
@@ -69,13 +69,13 @@ if(length(newPkg)){install.packages(newPkg)}
 
 1. Select the **Clusters** tab, then choose the desired cluster, followed by **Network visualization**.
 
-   ![Cluster Tabs](data/images/tabs_clusters.jpg)
+   <img src="data/images/tabs_clusters.jpg" alt="Cluster Tabs" width="600"/>
 
 2. On the left sidebar, choose:
    - Which **node attributes** to display.
    - The **gene of interest** in the selected cluster.
 
-   ![Sidebar](data/images/sidebar.jpg)
+<img src="data/images/sidebar.jpg" alt="Sidebar" width="400"/>
 
 3. Press **PLOT!** at the bottom of the sidebar to visualize the cluster (it may take a few seconds). If you change parameters, press **PLOT!** again to refresh the visualization.
 
