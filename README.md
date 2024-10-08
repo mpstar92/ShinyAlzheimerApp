@@ -79,16 +79,16 @@ which node attributes to display and the gene of interest in that cluster,
 Press PLOT! at the bottom of the sidebar to visualize the cluster (it may take a couple of seconds and if you change parameters press PLOT! again)
 
 the color of the border of a node:
- black = the selected gene
- red = up-regulated
- blue = down regulated
+    black = the selected gene
+    red = up-regulated
+    blue = down regulated
  
 the size of the nodes from big to small
- core genes
- selected gene
- AD pathway genes
- first neighbor genes
- no attribute
+    core genes
+    selected gene
+    AD pathway genes
+    first neighbor genes
+    no attribute
 
 the color code for the associated GO terms
 
@@ -96,8 +96,8 @@ picture
 
 
 the links between nodes are colored:
- red if the link is AD-specific
- green if the link is control specific
- grey else
+    red if the link is AD-specific
+    green if the link is control specific
+    grey else
 
 if you select to show the links of selected gene with wTO range the graph will only show the links from the selected genes and not AD/control-specific links.
