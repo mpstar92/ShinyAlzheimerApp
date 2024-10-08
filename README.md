@@ -22,95 +22,91 @@ reqPkg = c("data.table", "Matrix", "igraph", "qgraph", "DT",
            "dplyr", "shinydashboard", "biomaRt")
 newPkg = reqPkg[!(reqPkg %in% installed.packages()[,"Package"])]
 if(length(newPkg)){install.packages(newPkg)}
+```
+### Steps to Install and Run ADNet:
 
-The ADNet Shiny app can be accessed from the following GitHub repository:
-Shiny App ADNet GitHub Link
+#### **Download the Code:**
 
-Steps to Install and Run ADNet:
-Download the Code:
+1. Go to the [GitHub repository](https://github.com/mpstar92/Shiny_App_ADnet) and click on the green button labeled **"Code"** on the top right.
+   ![Download Code](data/images/code.jpg)
+2. Download the project as a **Zip** file.
+3. Extract the folder and open the project **Shiny_app_ADnet.Rproj**.
+4. Open the file `script/shiny_app_ADnet.R`.
+5. Start the application by clicking on **"Run App"** in the top right corner. The app will start in a browser after approximately 30 seconds.
 
-Go to the GitHub repository and click on the green button labeled "Code" on the top right.
-Download the project as a Zip file.
-![Alt text](data/images/code.jpg)
+---
 
-Click on the green button <>Code on the top right and download Zip
+### In the App:
 
-Extract the folder and open the project Shiny_app_ADnet.Rproj
-Open file script/shiny_app_ADnet.R
-Start the application by clicking on "Run App" in the top right corner. (App will start in a browser after a ~ 30 seconds)
+- In the top center, you can click through the different tabs.
 
+#### **AD Network Tab:**
 
-In the App:
+- You can switch between the **gene co-expression network**, information about the network, the **AD KEGG pathway**, and the **core genes**.
 
-In the top center you can click through the different tabs.
+  ![AD Network Tabs](data/images/tabs_ad.jpg)
 
-In the AD Network tab you can change between the gene co-expression network, information about the network, the AD KEGG pathway and the core genes.
-![Alt text](data/images/tabs_ad.jpg)
+---
 
+#### **Clusters Tab:**
 
+- In this tab, you can select a cluster, and for each cluster, there are options to view:
 
+  - **Cluster information**, including basic information about the selected gene.  
+    ![Cluster Information](data/images/cluster_information.jpg)
+  
+  - **First neighbor, core, and AD KEGG pathway genes**.  
+    ![Core Genes](data/images/core.jpg)
 
-In the Clusters tab you can select a cluster, and for each cluster is a tab for 
+- Each table in this section allows you to search for specific genes or terms.
+- The respective network visualization of each cluster is also available under **Network visualization** tab.
 
+  ![Network Plot](data/images/network.jpg)
 
+---
 
- cluster information including basic information about the selected gene
- ![Alt text](data/images/cluster_information.jpg)
- 
- the first neighbor, core and AD KEGG pathway genes 
+### To Visualize a Selected Cluster:
 
- ![Alt text](data/images/core.jpg)
+1. Select the **Clusters** tab, then choose the desired cluster, followed by **Network visualization**.
 
- In each table you can search for specific genes or terms.
+   ![Cluster Tabs](data/images/tabs_clusters.jpg)
 
- 
- And the respective interactive plot.
+2. On the left sidebar, choose:
+   - Which **node attributes** to display.
+   - The **gene of interest** in the selected cluster.
 
-![Alt text](data/images/network.jpg)
+   ![Sidebar](data/images/sidebar.jpg)
 
+3. Press **PLOT!** at the bottom of the sidebar to visualize the cluster (it may take a few seconds). If you change parameters, press **PLOT!** again to refresh the visualization.
 
+---
 
+### **Node Information:**
 
-To get a visualization of your cluster of choosing:
+- **Node Border Colors**:
+  - **Black** = The selected gene.
+  - **Red** = Up-regulated genes.
+  - **Blue** = Down-regulated genes.
 
-Select the Tabs Clusters; the cluster; Network visualization:
+- **Node Sizes (from large to small)**:
+  - Core genes.
+  - Selected gene.
+  - AD pathway genes.
+  - First neighbor genes.
+  - No specific attribute.
 
-![Alt text](data/images/tabs_clusters.jpg)
+---
 
+### **GO Term Color Code**:
 
-Select in the left sidebar: 
+  ![GO Term Color Code](data/images/colorcode.jpg)
 
-![Alt text](data/images/sidebar.jpg)
+---
 
-which node attributes to display and the gene of interest in that cluster,
-Press PLOT! at the bottom of the sidebar to visualize the cluster (it may take a couple of seconds and if you change parameters press PLOT! again)
+### **Link Colors Between Nodes**:
 
-the color of the border of a node:
+- **Red**: AD-specific links.
+- **Green**: Control-specific links.
+- **Grey**: Conserved links.
 
-    black = the selected gene
-    red = up-regulated
-    blue = down regulated
- 
-the size of the nodes from big to small:
-
-    core genes
-    selected gene
-    AD pathway genes
-    first neighbor genes
-    no attribute
-
-the color code for the associated GO terms
-
-![Alt text](data/images/colorcode.jpg)
-
-
-the links between nodes are colored:
-
-    red = AD-specific
-    green = control specific
-    grey else
-
-if you select to show the links of selected gene with wTO range the graph will only show the links from the selected genes and not AD/control-specific links.
-
-
-
+If you choose to display links with a **wTO range**, the graph will show only the links from the selected gene, without distinguishing AD/control-specific links.
