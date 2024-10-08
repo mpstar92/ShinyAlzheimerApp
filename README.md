@@ -60,6 +60,9 @@ In the App:
 
 In the top center you can click through the different tabs.
 
+![Alt text](data/images/tabs_ad.jpg)
+
+
 In the AD Network tab you can change between the gene co-expression network, information about the network, the AD KEGG pathway and the core genes.
 
 In the Clusters tab you can select a cluster, and for each cluster is a tab for 
