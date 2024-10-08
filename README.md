@@ -8,8 +8,8 @@ In ADNet, additional key data is embedded, such as each gene's known function, d
 # **Table of Contents and Additional Tutorials**  
 _____________________________________________________
 
-1. [**Installation**](#installation)  
-2. [**Quick Start Guide**](#quick-start-guide)
+1. [Installation](#installation)
+2. [Quick Start Guide](#quick-start-guide)
 
 ---
 
