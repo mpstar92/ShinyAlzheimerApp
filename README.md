@@ -60,15 +60,19 @@ In the App:
 
 In the top center you can click through the different tabs.
 
+In the AD Network tab you can change between the gene co-expression network, information about the network, the AD KEGG pathway and the core genes.
 ![Alt text](data/images/tabs_ad.jpg)
 
 
-In the AD Network tab you can change between the gene co-expression network, information about the network, the AD KEGG pathway and the core genes.
+
 
 In the Clusters tab you can select a cluster, and for each cluster is a tab for 
  cluster information including basic information about the selected gene,
  the first neighbor, core and AD KEGG pathway genes 
  and the respective interactive plot.
+
+![Alt text](data/images/tabs_clusters.jpg)
+
 
 In each table you can search for specific genes or terms.
 
@@ -77,6 +81,8 @@ To get a visualization of your cluster of choosing:
 Select the Tabs Clusters; the cluster; Network visualization:
 
 Select in the left sidebar: 
+
+![Alt text](data/images/sidebar.jpg)
 
 which node attributes to display and the gene of interest in that cluster,
 Press PLOT! at the bottom of the sidebar to visualize the cluster (it may take a couple of seconds and if you change parameters press PLOT! again)
@@ -97,7 +103,7 @@ the size of the nodes from big to small:
 
 the color code for the associated GO terms
 
-picture
+![Alt text](data/images/colorcode.jpg)
 
 
 the links between nodes are colored:
