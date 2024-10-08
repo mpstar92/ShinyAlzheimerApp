@@ -99,8 +99,8 @@ picture
 
 the links between nodes are colored:
 
-    red if the link is AD-specific
-    green if the link is control specific
+    red = AD-specific
+    green = control specific
     grey else
 
 if you select to show the links of selected gene with wTO range the graph will only show the links from the selected genes and not AD/control-specific links.
