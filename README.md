@@ -79,11 +79,13 @@ which node attributes to display and the gene of interest in that cluster,
 Press PLOT! at the bottom of the sidebar to visualize the cluster (it may take a couple of seconds and if you change parameters press PLOT! again)
 
 the color of the border of a node:
+
     black = the selected gene
     red = up-regulated
     blue = down regulated
  
-the size of the nodes from big to small
+the size of the nodes from big to small:
+
     core genes
     selected gene
     AD pathway genes
@@ -96,6 +98,7 @@ picture
 
 
 the links between nodes are colored:
+
     red if the link is AD-specific
     green if the link is control specific
     grey else
