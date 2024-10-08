@@ -69,14 +69,25 @@ In the AD Network tab you can change between the gene co-expression network, inf
 
 
 In the Clusters tab you can select a cluster, and for each cluster is a tab for 
- cluster information including basic information about the selected gene,
- the first neighbor, core and AD KEGG pathway genes 
- and the respective interactive plot.
 
 ![Alt text](data/images/tabs_clusters.jpg)
 
+ cluster information including basic information about the selected gene
+ ![Alt text](data/images/cluster_information.jpg)
+ 
+ the first neighbor, core and AD KEGG pathway genes 
 
-In each table you can search for specific genes or terms.
+ ![Alt text](data/images/core.jpg)
+
+ In each table you can search for specific genes or terms.
+
+ 
+ And the respective interactive plot.
+
+![Alt text](data/images/network.jpg)
+
+
+
 
 To get a visualization of your cluster of choosing:
 
