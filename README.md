@@ -23,20 +23,27 @@ _____________________________________________________
 3. Frequently Asked Questions
 
 
+
+
+
 Installation 
+
 
 RStudio is preferable to use.
 First, users can run the following code to check if the packages required by Shiny App ADNet exist and install them if required:
 
-reqPkg = c("data.table", "Matrix", "igraph", "qgraph", "DT", 
+    reqPkg = c("data.table", "Matrix", "igraph", "qgraph", "DT", 
            "dplyr", "shinydashboard", "biomaRt")
-newPkg = reqPkg[!(reqPkg %in% installed.packages()[,"Package"])]
-if(length(newPkg)){install.packages(newPkg)}
+    newPkg = reqPkg[!(reqPkg %in% installed.packages()[,"Package"])]
+    if(length(newPkg)){install.packages(newPkg)}
+
+
 
 
 
 
 Quick Start Guide
+
 
 
 Shiny App ADNet can then be installed from GitHub as follows:
