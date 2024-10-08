@@ -20,13 +20,13 @@ _____________________________________________________
 
 1. Installation
 2. Quick Start Guide
-3. Frequently Asked Questions
 
 
 
 
 
-Installation 
+
+1.Installation 
 
 
 RStudio is preferable to use.
@@ -42,7 +42,7 @@ First, users can run the following code to check if the packages required by Shi
 
 
 
-Quick Start Guide
+2.Quick Start Guide
 
 
 
@@ -113,3 +113,6 @@ the links between nodes are colored:
     grey else
 
 if you select to show the links of selected gene with wTO range the graph will only show the links from the selected genes and not AD/control-specific links.
+
+
+
