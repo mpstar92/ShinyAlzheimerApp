@@ -48,7 +48,9 @@ First, users can run the following code to check if the packages required by Shi
 
 Shiny App ADNet can then be installed from GitHub as follows:
 
-https://github.com/mpstar92/Shiny_App_ADnet   ![Alt text](data/images/code.jpg)
+https://github.com/mpstar92/Shiny_App_ADnet  
+![Alt text](data/images/code.jpg)
+
 Click on the green button <>Code on the top right and download Zip
 
 Extract the folder and open the project Shiny_app_ADnet.Rproj
