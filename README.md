@@ -5,40 +5,32 @@ ADNet is a Shiny app designed to facilitate exploration of the temporal cortex A
 In ADNet, additional key data is embedded, such as each gene's known function, degree, hub status, differential expression (DEG), gene type (protein-coding or lncRNA), clusters and involvement in Alzheimer's disease pathways according to the KEGG database. This information is presented in a clear, easily navigable table format, allowing quick access to essential metrics and simplifying the process of exploring the gene networks.
 
 
-Table of Contents and Additional Tutorials
+# **Table of Contents and Additional Tutorials**  
 _____________________________________________________
 
-1. Installation
-2. Quick Start Guide
+1. [**Installation**](#installation)  
+2. [**Quick Start Guide**](#quick-start-guide)
 
+---
 
+## **1. Installation**  
 
+We recommend using **RStudio** for running the Shiny app. First, users should ensure that all required packages for ADNet are installed. The following R code checks for the required packages and installs any that are missing:
 
-
-
-1.Installation 
-
-
-RStudio is preferable to use.
-First, users can run the following code to check if the packages required by Shiny App ADNet exist and install them if required:
-
-    reqPkg = c("data.table", "Matrix", "igraph", "qgraph", "DT", 
+```r
+reqPkg = c("data.table", "Matrix", "igraph", "qgraph", "DT", 
            "dplyr", "shinydashboard", "biomaRt")
-    newPkg = reqPkg[!(reqPkg %in% installed.packages()[,"Package"])]
-    if(length(newPkg)){install.packages(newPkg)}
+newPkg = reqPkg[!(reqPkg %in% installed.packages()[,"Package"])]
+if(length(newPkg)){install.packages(newPkg)}
 
+The ADNet Shiny app can be accessed from the following GitHub repository:
+Shiny App ADNet GitHub Link
 
+Steps to Install and Run ADNet:
+Download the Code:
 
-
-
-
-2.Quick Start Guide
-
-
-
-Shiny App ADNet can then be installed from GitHub as follows:
-
-https://github.com/mpstar92/Shiny_App_ADnet  
+Go to the GitHub repository and click on the green button labeled "Code" on the top right.
+Download the project as a Zip file.
 ![Alt text](data/images/code.jpg)
 
 Click on the green button <>Code on the top right and download Zip
