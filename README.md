@@ -70,7 +70,7 @@ In the AD Network tab you can change between the gene co-expression network, inf
 
 In the Clusters tab you can select a cluster, and for each cluster is a tab for 
 
-![Alt text](data/images/tabs_clusters.jpg)
+
 
  cluster information including basic information about the selected gene
  ![Alt text](data/images/cluster_information.jpg)
@@ -92,6 +92,9 @@ In the Clusters tab you can select a cluster, and for each cluster is a tab for
 To get a visualization of your cluster of choosing:
 
 Select the Tabs Clusters; the cluster; Network visualization:
+
+![Alt text](data/images/tabs_clusters.jpg)
+
 
 Select in the left sidebar: 
 
