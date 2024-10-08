@@ -28,7 +28,8 @@ if(length(newPkg)){install.packages(newPkg)}
 #### **Download the Code:**
 
 1. Go to the [GitHub repository](https://github.com/mpstar92/Shiny_App_ADnet) and click on the green button labeled **"Code"** on the top right.
-   ![Download Code](data/images/code.jpg)
+ <img src="data/images/code.jpg" alt="Download Code" width="100"/>
+ 
 2. Download the project as a **Zip** file.
 3. Extract the folder and open the project **Shiny_app_ADnet.Rproj**.
 4. Open the file `script/shiny_app_ADnet.R`.
