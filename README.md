@@ -92,8 +92,7 @@ if(length(newPkg)){install.packages(newPkg)}
 - **Node Sizes (from large to small)**:
   - Core genes.
   - Selected gene.
-  - AD pathway genes.
-  - First neighbor genes.
+  - if selected AD pathway genes/ First neighbor genes.
   - No specific attribute.
 
 ---
