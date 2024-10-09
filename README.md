@@ -89,11 +89,10 @@ if(length(newPkg)){install.packages(newPkg)}
   - **Red** = Up-regulated genes.
   - **Blue** = Down-regulated genes.
 
-- **Node Sizes (from large to small)**:
-  - Core genes.
-  - Selected gene.
-  - if selected AD pathway genes/ First neighbor genes.
-  - No specific attribute.
+- **Node Sizes**:
+  - Largest: Core hub genes.
+  - Medium: genes/ First neighbor genes.
+  - Smallest: the rest of nodes.
 
 ---
 
